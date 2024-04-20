@@ -1,0 +1,36 @@
+{
+    "name": "cleaniquecoders/government",
+    "type": "library",
+    "description": "List of Malaysia Government Agencies.",
+    "keywords": [
+        "malaysia",
+        "agencies",
+        "ministries"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CleaniqueCoders\\Government\\": "src/"
+        },
+        "files": [
+            "support/helpers.php"
+        ]
+    },
+    "require": {
+        "illuminate/support": "^11.4"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.15",
+        "pestphp/pest": "^2.34"
+    },
+    "scripts": {
+        "test": "@php vendor/bin/pest",
+        "format": "@php vendor/bin/pint",
+        "process": "@php generate-summary.php"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
